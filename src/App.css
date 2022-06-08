@@ -2,9 +2,17 @@
   text-align: center;
 }
 
+.App-header {
+  font-weight: 600;
+  font-size: 30px;
+  padding: 20px;
+}
 footer {
-  text-align: center;
-  position: fixed;
   bottom: 10px;
-  left: 25%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }

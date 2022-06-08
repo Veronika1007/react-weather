@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Weather.css";
+import FormattedDate from "./FormattedDate";
 import WeatherInfo from "./WeatherInfo";
 import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
@@ -18,8 +19,7 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       description: response.data.weather[0].description,
-      iconURL:
-        "https://www.creativefabrica.com/wp-content/uploads/2019/04/Sun-Icon-by-demolabid-15.jpg",
+      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
   function handleSubmit(event) {
@@ -40,7 +40,7 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <form onSubmit={handleSubmit}>
+        <form className="WeatherForm" onSubmit={handleSubmit}>
           <div>
             <input
               type="search"

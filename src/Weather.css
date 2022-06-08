@@ -7,6 +7,10 @@ li {
   margin: 0px;
 }
 
+.WeatherForm {
+  padding: 20px;
+}
+
 .image-icon {
   display: block;
   height: 100px;
