@@ -16,3 +16,11 @@ footer {
   right: 0;
   text-align: center;
 }
+.container {
+  background-color: #c4ddff;
+  border-radius: 25px;
+  border: 2px solid #001d6e;
+  padding: 20px;
+  margin: 50px;
+  width: 200px;
+}

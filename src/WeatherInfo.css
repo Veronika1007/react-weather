@@ -2,3 +2,10 @@
   line-height: 5px;
   padding: 10px;
 }
+.units {
+  display: inline-block;
+  text-align: left;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 25px;
+}
